@@ -1,0 +1,22 @@
+package CapaDato;
+
+import java.sql.Connection;
+
+public class conexion {
+
+	private static Connection conn = null;
+    private static String login = "SYSTEM";
+    private static String clave = "yourfriend_440";
+    private static final String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+    
+	public Connection conectar() {
+		Connection cn = null;
+		try {
+			cn = DriverManager.getConnection(url);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return cn;
+	}
+}
