@@ -16,6 +16,15 @@ public class conexion {
 		try {			
 			cn = DriverManager.getConnection(urlOracle);
 			
+			if (cn != null)
+			{
+				System.out.println("Conexion exitosa");
+			}
+			else
+			{
+				System.out.println("erro de conexion");
+			}
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
