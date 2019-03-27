@@ -83,6 +83,31 @@ public class EmpleadoDAO {
         return mensaje;
     }
     public void listar(Connection con, JTable tabla) {
+    	DefaultTableModel model;
+        String[] columnas = {"ID_EMPLEADO","NOMBRES","APELLIDOS","DNI","ESTADO_CIVIL","GENERO","EDAD"};
+        model = new DefaultTableModel(null, columnas);
         
+        String sql = "SELECT * FROM EMPLEADO ORDER BY ID_EMPLEADO";
+        
+        String[] filas = new String[7];
+        Statement st = null;
+        ResultSet rs = null;
+        
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery(sql);
+            
+            while (rs.next())
+            {
+                for (int i = 0; i < 7; i++) {
+                    filas[i] = rs.getString(i+1);                    
+                }
+                model.addRow(filas);
+            }            
+            tabla.setModel(model);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "no se puede listar");
+        }
     }
 }
