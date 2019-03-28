@@ -4,6 +4,8 @@ package com.rrhh.pe.test;
 import com.rrhh.pe.bo.EmpleadoBO;
 import com.rrhh.pe.dao.EmpleadoDAO;
 import com.rrhh.pe.entity.Empleado;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,8 +17,8 @@ public class Test {
     String mensaje = "";
     
     public void insertar() {
-        emp.setNombres("MOISES");
-        emp.setApellidos("HUAMAN RAMOS");
+        emp.setNombres("JOSUE");
+        emp.setApellidos("VILLA RAMOS");
         emp.setDni("41229380");
         emp.setEstadoCivil('S');
         emp.setGenero('M');
@@ -26,20 +28,29 @@ public class Test {
     }
     
     public void modificar() {
-        emp.setId_Empleado(2);
-        emp.setNombres("MOISES");
-        emp.setApellidos("HUAMAN RAMOS");
-        emp.setDni("41229380");
+        emp.setId_Empleado(17);
+        emp.setNombres("PEDRO");
+        emp.setApellidos("CALDERON ORTIZ");
+        emp.setDni("555555");
         emp.setEstadoCivil('S');
         emp.setGenero('M');
-        emp.setEdad(37);
+        emp.setEdad(30);
         mensaje = ebo.modificar(emp);
         System.out.println(mensaje);
     }
     
+    public void eliminar() {
+        mensaje = ebo.eliminar(18);
+        System.out.println(mensaje);
+    }
+    public void obtenerLista() {
+        List<Empleado> listaCliente= new ArrayList<Empleado>();
+        listaCliente = ebo.obtenerLista();
+        System.out.println("Listo");
+    }
     public static void main(String[] args) {
         Test test = new Test();
-        test.insertar();
+        test.obtenerLista();
     }
     
 }

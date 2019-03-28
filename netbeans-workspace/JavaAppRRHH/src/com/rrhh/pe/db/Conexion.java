@@ -18,7 +18,7 @@ public class Conexion {
     private static Connection conn = null;
     private static String login = "SYSTEM";
     private static String clave = "yourfriend_440";
-    private static final String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+    private static String url = "jdbc:oracle:thin:@localhost:1521:orcl";
     
     public static Connection getConnection() {
         try {

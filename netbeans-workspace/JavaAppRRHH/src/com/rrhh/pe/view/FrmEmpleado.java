@@ -5,6 +5,11 @@
  */
 package com.rrhh.pe.view;
 
+import com.rrhh.pe.bo.EmpleadoBO;
+import com.rrhh.pe.entity.Empleado;
+import javafx.beans.binding.Bindings;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author MOISESHR
@@ -14,8 +19,15 @@ public class FrmEmpleado extends javax.swing.JFrame {
     /**
      * Creates new form FrmEmpleado
      */
+    private EmpleadoBO ebo = new EmpleadoBO();
+    
     public FrmEmpleado() {
         initComponents();
+        Listar();
+    }
+    
+    public void Listar() {
+        ebo.listar(tbEmpleado);
     }
 
     /**
@@ -82,7 +94,7 @@ public class FrmEmpleado extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Cedula:");
+        jLabel6.setText("DNI:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, 20));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -154,9 +166,19 @@ public class FrmEmpleado extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, 380, 270));
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 390, -1, -1));
 
         btnAgregar.setText("Agregar");
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, -1, -1));
 
         btnModificar.setText("Modificar");
@@ -166,6 +188,11 @@ public class FrmEmpleado extends javax.swing.JFrame {
         jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, -1, -1));
 
         btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
@@ -189,6 +216,63 @@ public class FrmEmpleado extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rdFemeninoActionPerformed
 
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        limpiar();
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
+        
+        if (txtID.getText().isEmpty() || txtNombres.getText().isEmpty() || txtApellidos.getText().isEmpty() || txtDNI.getText().isEmpty() || txtEdad.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Llene todos los campos");
+        } else {
+            char estado;
+            if (rdCasado.isSelected()) {
+                estado = 'C';
+            }
+            else
+            {
+                estado = 'S';
+            }
+            
+            char genero;
+            if (rdFemenino.isSelected()) {
+                genero = 'F';
+            }
+            else
+            {
+                genero = 'M';
+            }
+            
+            Empleado emp = new Empleado();
+            emp.setNombres(txtNombres.getText());
+            emp.setApellidos(txtApellidos.getText());
+            emp.setDni(txtDNI.getText());
+            emp.setEstadoCivil(estado);
+            emp.setGenero(genero);
+            emp.setEdad(Integer.parseInt(txtEdad.getText()));
+            String mensaje = ebo.agregar(emp);
+            JOptionPane.showMessageDialog(null, mensaje);
+            limpiar();
+            Listar();
+        }
+    }//GEN-LAST:event_btnAgregarActionPerformed
+
+    public void limpiar() {
+        txtID.getText().isEmpty();
+        
+        txtID.setText("");
+        txtNombres.setText("");
+        txtApellidos.setText("");
+        txtDNI.setText("");        
+        txtEdad.setText("");
+        groupEstado.clearSelection();
+        groupGenero.clearSelection();
+    }
+    
     /**
      * @param args the command line arguments
      */

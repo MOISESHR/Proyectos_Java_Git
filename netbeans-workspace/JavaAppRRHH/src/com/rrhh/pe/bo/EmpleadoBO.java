@@ -9,6 +9,11 @@ import com.rrhh.pe.dao.EmpleadoDAO;
 import com.rrhh.pe.db.Conexion;
 import com.rrhh.pe.entity.Empleado;
 import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JTable;
 
 /**
  *
@@ -22,7 +27,7 @@ public class EmpleadoBO {
         Connection conn = Conexion.getConnection();        
         try {
             mensaje = edao.agregar(conn, emp);
-            conn.rollback();
+            //conn.rollback();
         } catch (Exception e) {
             mensaje = mensaje + " " + e.getMessage();
         }finally{
@@ -41,7 +46,7 @@ public class EmpleadoBO {
         Connection conn = Conexion.getConnection();        
         try {
             mensaje = edao.modificar(conn, emp);
-            conn.rollback();
+            //conn.rollback();
         } catch (Exception e) {
             mensaje = mensaje + " " + e.getMessage();
         }finally{
@@ -60,7 +65,7 @@ public class EmpleadoBO {
         Connection conn = Conexion.getConnection();        
         try {
             mensaje = edao.eliminar(conn, id);
-            conn.rollback();
+            
         } catch (Exception e) {
             mensaje = mensaje + " " + e.getMessage();
         }finally{
@@ -75,7 +80,27 @@ public class EmpleadoBO {
         
         return mensaje;
     }
-    public void listar() {
+    public List<Empleado> obtenerLista() {
+        Connection conn = Conexion.getConnection();
+        List<Empleado> listaCliente= new ArrayList<Empleado>();
         
+        try {
+            listaCliente = edao.obtenerLista(conn);
+            conn.close();
+        } catch (Exception ex) {
+            //Logger.getLogger(EmpleadoBO.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex.getMessage());
+        }
+        return listaCliente;
+    }
+    public void listar(JTable tabla) {
+        Connection conn = Conexion.getConnection();
+        edao.listar(conn, tabla);
+        try {
+            conn.close();
+        } catch (Exception ex) {
+            //Logger.getLogger(EmpleadoBO.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex.getMessage());
+        }
     }
 }

@@ -3,8 +3,13 @@ package com.rrhh.pe.dao;
 import com.rrhh.pe.entity.Empleado;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -82,7 +87,7 @@ public class EmpleadoDAO {
         }
         return mensaje;
     }
-    public void listar(Connection con, JTable tabla) {
+    public void listar(Connection con, JTable tabla) {    	
     	DefaultTableModel model;
         String[] columnas = {"ID_EMPLEADO","NOMBRES","APELLIDOS","DNI","ESTADO_CIVIL","GENERO","EDAD"};
         model = new DefaultTableModel(null, columnas);
@@ -100,13 +105,13 @@ public class EmpleadoDAO {
             while (rs.next())
             {
                 for (int i = 0; i < 7; i++) {
-                    filas[i] = rs.getString(i+1);                    
+                    filas[i] = rs.getString(i+1);
                 }
                 model.addRow(filas);
-            }            
+            }
             tabla.setModel(model);
             
-        } catch (Exception e) {
+        } catch (Exception e) {        	
             JOptionPane.showMessageDialog(null, "no se puede listar");
         }
     }

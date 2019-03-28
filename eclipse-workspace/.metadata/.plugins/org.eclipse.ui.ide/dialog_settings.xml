@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\MOISES\DEVELOPER\JAVA\Proyectos_Java_Git\eclipse-workspace"/>
 		<item value="D:\MOISES\DEVELOPER\JAVA\Proyectos_Java_Git\eclipse-workspace\Restful_Service"/>
 		<item value="D:\MOISES\DEVELOPER\JAVA\PROYECTOS JAVA GIT\eclipse-workspace\Pry_Java_Crud"/>
 	</list>
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
 	</section>
 </section>
