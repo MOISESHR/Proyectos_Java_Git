@@ -9,6 +9,7 @@ import com.rrhh.pe.dao.EmpleadoDAO;
 import com.rrhh.pe.db.Conexion;
 import com.rrhh.pe.entity.Empleado;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -98,9 +99,20 @@ public class EmpleadoBO {
         edao.listar(conn, tabla);
         try {
             conn.close();
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             //Logger.getLogger(EmpleadoBO.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
         }
+    }
+    
+    public int getMaxID() {
+        Connection conn = Conexion.getConnection();
+        int id = edao.getMaxID(conn);
+        try {
+            conn.close();
+        } catch (SQLException ex) {            
+            System.out.println(ex.getMessage());
+        }
+        return id;
     }
 }

@@ -24,12 +24,21 @@ public class FrmEmpleado extends javax.swing.JFrame {
     public FrmEmpleado() {
         initComponents();
         Listar();
+        idMax();
+        
+        setTitle("FORMULARIOS EMPLEADO");
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
     
     public void Listar() {
         ebo.listar(tbEmpleado);
     }
 
+    public void idMax() {
+        txtID.setText(ebo.getMaxID()+"");
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -161,6 +170,11 @@ public class FrmEmpleado extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tbEmpleado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbEmpleadoMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tbEmpleado);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, 380, 270));
@@ -182,9 +196,19 @@ public class FrmEmpleado extends javax.swing.JFrame {
         jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, -1, -1));
 
         btnModificar.setText("Modificar");
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, -1, -1));
 
         btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, -1, -1));
 
         btnLimpiar.setText("Limpiar");
@@ -261,16 +285,86 @@ public class FrmEmpleado extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAgregarActionPerformed
 
-    public void limpiar() {
-        txtID.getText().isEmpty();
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        if (txtID.getText().isEmpty() || txtNombres.getText().isEmpty() || txtApellidos.getText().isEmpty() || txtDNI.getText().isEmpty() || txtEdad.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Llene todos los campos");
+        } else {
+            char estado;
+            if (rdCasado.isSelected()) {
+                estado = 'C';
+            }
+            else
+            {
+                estado = 'S';
+            }
+            
+            char genero;
+            if (rdFemenino.isSelected()) {
+                genero = 'F';
+            }
+            else
+            {
+                genero = 'M';
+            }
+            
+            Empleado emp = new Empleado();
+            emp.setId_Empleado(Integer.parseInt(txtID.getText()));
+            emp.setNombres(txtNombres.getText());
+            emp.setApellidos(txtApellidos.getText());
+            emp.setDni(txtDNI.getText());
+            emp.setEstadoCivil(estado);
+            emp.setGenero(genero);
+            emp.setEdad(Integer.parseInt(txtEdad.getText()));
+            String mensaje = ebo.modificar(emp);
+            JOptionPane.showMessageDialog(null, mensaje);
+            limpiar();
+            Listar();
+        }
+    }//GEN-LAST:event_btnModificarActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        if (txtID.getText().isEmpty() || txtNombres.getText().isEmpty() || txtApellidos.getText().isEmpty() || txtDNI.getText().isEmpty() || txtEdad.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Llene todos los campos");
+        } else {
+            String mensaje = ebo.eliminar(Integer.parseInt(txtID.getText()));            
+            JOptionPane.showMessageDialog(null, mensaje);
+            limpiar();
+            Listar();
+        }
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void tbEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbEmpleadoMouseClicked
+        int seleccion = tbEmpleado.rowAtPoint(evt.getPoint());
         
-        txtID.setText("");
+        txtID.setText(tbEmpleado.getValueAt(seleccion, 0)+"");
+        txtNombres.setText(tbEmpleado.getValueAt(seleccion, 1)+"");
+        txtApellidos.setText(tbEmpleado.getValueAt(seleccion, 2)+"");
+        txtDNI.setText(tbEmpleado.getValueAt(seleccion, 3)+"");
+        String estado = tbEmpleado.getValueAt(seleccion, 4)+"";
+        if (estado.equals("S")){
+            rdSoltero.setSelected(true);
+        }else{
+            rdCasado.setSelected(true);
+        }
+        String genero = tbEmpleado.getValueAt(seleccion, 5)+"";
+        if (genero.equals("M")){
+            rdMasculino.setSelected(true);
+        }else{
+            rdFemenino.setSelected(true);
+        }
+        txtEdad.setText(tbEmpleado.getValueAt(seleccion, 6)+"");
+        
+    }//GEN-LAST:event_tbEmpleadoMouseClicked
+
+    public void limpiar() {
+        txtID.setText("0");
         txtNombres.setText("");
         txtApellidos.setText("");
-        txtDNI.setText("");        
+        txtDNI.setText("");
         txtEdad.setText("");
         groupEstado.clearSelection();
         groupGenero.clearSelection();
+        idMax();
     }
     
     /**
