@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+       http://www.springframework.org/schema/aop  
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd  
+       http://www.springframework.org/schema/context  
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/jee
+       http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+     
+    <bean name="eaiDAO" class="pe.com.claro.eba.activospostpagoejbs.dao.EaiDAOImpl"/>
+    <bean name="bscsDAO" class="pe.com.claro.eba.activospostpagoejbs.dao.BscsDAOImpl"/>
+    <bean name="pvuDAO" class="pe.com.claro.eba.activospostpagoejbs.dao.PvuDAOImpl"/>
+    <bean name="sgaDAO" class="pe.com.claro.eba.activospostpagoejbs.dao.SgaDAOImpl"/>
+    <bean name="cmsAdapterClient" class="pe.com.claro.eba.activospostpagoejbs.ejbclients.CmsAdapterClientImpl" scope="prototype"/>
+    <bean name="jmsMessageSender" class="pe.com.claro.eba.activospostpagoejbs.jms.clients.JMSMessageSenderImpl"/>
+
+    <bean name="cmsService" class="pe.com.claro.eba.activospostpagoejbs.service.CmsServiceImpl"/>
+    <bean name="activosPostpagoService" class="pe.com.claro.eba.activospostpagoejbs.service.ActivosPostpagoServiceImpl"/>
+    <bean name="gestionActualizaEstadosServiceImpl" class="pe.com.claro.eba.activospostpagoejbs.service.GestionActualizaEstadosServiceImpl"/>
+    <bean name="gestionTxEaiServiceImpl" class="pe.com.claro.eba.activospostpagoejbs.service.GestionTxEaiServiceImpl"/>
+    
+</beans>
