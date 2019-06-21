@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioAutenticacion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RRHH.Acceso.CapaComun.Entidades" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioAutenticacion_Ingresar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ingresar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_Ingresar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IngresarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_GenerarKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarKey" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_GenerarKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_ValidarKeyASP_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarKeyASP" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_ValidarKeyASP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarKeyASPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_ValidarKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarKey" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_ValidarKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_CambiarContrasenia_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContrasenia" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_CambiarContrasenia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContraseniaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_OlvidarContrasenia_InputMessage">
+    <wsdl:part name="parameters" element="tns:OlvidarContrasenia" />
+  </wsdl:message>
+  <wsdl:message name="IServicioAutenticacion_OlvidarContrasenia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OlvidarContraseniaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioAutenticacion">
+    <wsdl:operation name="Ingresar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/Ingresar" message="tns:IServicioAutenticacion_Ingresar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/IngresarResponse" message="tns:IServicioAutenticacion_Ingresar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/GenerarKey" message="tns:IServicioAutenticacion_GenerarKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/GenerarKeyResponse" message="tns:IServicioAutenticacion_GenerarKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarKeyASP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/ValidarKeyASP" message="tns:IServicioAutenticacion_ValidarKeyASP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/ValidarKeyASPResponse" message="tns:IServicioAutenticacion_ValidarKeyASP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/ValidarKey" message="tns:IServicioAutenticacion_ValidarKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/ValidarKeyResponse" message="tns:IServicioAutenticacion_ValidarKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarContrasenia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/CambiarContrasenia" message="tns:IServicioAutenticacion_CambiarContrasenia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/CambiarContraseniaResponse" message="tns:IServicioAutenticacion_CambiarContrasenia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OlvidarContrasenia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioAutenticacion/OlvidarContrasenia" message="tns:IServicioAutenticacion_OlvidarContrasenia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioAutenticacion/OlvidarContraseniaResponse" message="tns:IServicioAutenticacion_OlvidarContrasenia_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioAutenticacion" type="tns:IServicioAutenticacion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Ingresar">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/Ingresar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarKey">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/GenerarKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarKeyASP">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/ValidarKeyASP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarKey">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/ValidarKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarContrasenia">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/CambiarContrasenia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OlvidarContrasenia">
+      <soap:operation soapAction="http://tempuri.org/IServicioAutenticacion/OlvidarContrasenia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioAutenticacion">
+    <wsdl:port name="BasicHttpBinding_IServicioAutenticacion" binding="tns:BasicHttpBinding_IServicioAutenticacion">
+      <soap:address location="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

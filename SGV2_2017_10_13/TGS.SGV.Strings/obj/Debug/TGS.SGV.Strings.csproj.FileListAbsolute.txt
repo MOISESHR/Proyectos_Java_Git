@@ -1,0 +1,17 @@
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\bin\Debug\TGS.SGV.Strings.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\bin\Debug\TGS.SGV.Strings.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.csprojResolveAssemblyReference.cache
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.Errores.resources
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.csproj.GenerateResource.Cache
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.General.resources
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.ReglasNegocio.resources
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\bin\Debug\TGS.SGV.Strings.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\bin\Debug\TGS.SGV.Strings.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.Errores.resources
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.General.resources
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.ReglasNegocio.resources
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.csproj.GenerateResource.Cache
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Strings\obj\Debug\TGS.SGV.Strings.pdb

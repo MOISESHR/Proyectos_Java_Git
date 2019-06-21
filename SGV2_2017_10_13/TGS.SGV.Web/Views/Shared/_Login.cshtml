@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SGV</title>
+
+    @Styles.Render("~/Content/master/estilos")
+    @Styles.Render("~/bundles/Assets/css")
+    <link href="@Url.Content("~/Content/login.css")" rel="stylesheet" type="text/css" />
+
+     
+</head>
+
+<body class="login-screen" ng-app="app.Seguridad" block-ui="main" style="position: relative;">
+
+    <input name="__RequestVerificationToken" type="hidden" value='@TGS.SGV.Web.Utilitarios.CustomAntiForgeryToken.GetAntiForgeryToken()'>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery/js")
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/bundles/angular/js")
+    @Scripts.Render("~/bundles/Assets/js")
+    @Scripts.Render("~/bundles/app/base/js")
+
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
+

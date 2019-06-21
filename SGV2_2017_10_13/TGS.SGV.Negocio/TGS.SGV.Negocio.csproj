@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EFD60EC-E192-421B-8295-47FEC0002FAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TGS.SGV.Negocio</RootNamespace>
+    <AssemblyName>TGS.SGV.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contrato\ICorreoNegocio.cs" />
+    <Compile Include="Contrato\IEmpresaNegocio.cs" />
+    <Compile Include="Contrato\IGoceVacacionalNegocio.cs" />
+    <Compile Include="Contrato\IModuloSistemaNegocio.cs" />
+    <Compile Include="Contrato\IParametroNegocio.cs" />
+    <Compile Include="Contrato\IPerfilUsuarioNegocio.cs" />
+    <Compile Include="Contrato\IPeriodoNegocio.cs" />
+    <Compile Include="Contrato\IPlantillaNegocio.cs" />
+    <Compile Include="Contrato\IRolVacacionalNegocio.cs" />
+    <Compile Include="Contrato\ISolicitudNegocio.cs" />
+    <Compile Include="Contrato\ITablaGeneralNegocio.cs" />
+    <Compile Include="Contrato\ITrabajadorNegocio.cs" />
+    <Compile Include="Contrato\IUnidadNegocio.cs" />
+    <Compile Include="Contrato\IUsuarioNegocio.cs" />
+    <Compile Include="Implementacion\CorreoNegocio.cs" />
+    <Compile Include="Implementacion\EmpresaNegocio.cs" />
+    <Compile Include="Implementacion\GoceVacacionalNegocio.cs" />
+    <Compile Include="Implementacion\ModuloSistemaNegocio.cs" />
+    <Compile Include="Implementacion\ParametroNegocio.cs" />
+    <Compile Include="Implementacion\PerfilUsuarioNegocio.cs" />
+    <Compile Include="Implementacion\PeriodoNegocio.cs" />
+    <Compile Include="Implementacion\PlantillaNegocio.cs" />
+    <Compile Include="Implementacion\RolVacacionalNegocio.cs" />
+    <Compile Include="Implementacion\SolicitudNegocio.cs" />
+    <Compile Include="Implementacion\TablaGeneralNegocio.cs" />
+    <Compile Include="Implementacion\TrabajadorNegocio.cs" />
+    <Compile Include="Implementacion\UnidadNegocio.cs" />
+    <Compile Include="Implementacion\UsuarioNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TGS.SGV.AccesoDatos\TGS.SGV.AccesoDatos.csproj">
+      <Project>{83813ff7-c471-487c-aa1d-c3b91197a2ac}</Project>
+      <Name>TGS.SGV.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TGS.SGV.Agente\TGS.SGV.Agente.csproj">
+      <Project>{6af573db-bf9d-4873-825d-df4d0cb9ea93}</Project>
+      <Name>TGS.SGV.Agente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TGS.SGV.Comun\TGS.SGV.Comun.csproj">
+      <Project>{6aaca4fe-3eb9-43d5-b446-f5d97b73a0ec}</Project>
+      <Name>TGS.SGV.Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TGS.SGV.Modelo\TGS.SGV.Modelo.csproj">
+      <Project>{c151589d-ee5e-4899-895a-e47908b452e3}</Project>
+      <Name>TGS.SGV.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TGS.SGV.Strings\TGS.SGV.Strings.csproj">
+      <Project>{dc57a5d2-c2b8-4dcd-8c0b-ef2620a2cb98}</Project>
+      <Name>TGS.SGV.Strings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,102 @@
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\csc.exe
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\System.Collections.Immutable.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\System.Reflection.Metadata.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\vbc.exe
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\VBCSCompiler.exe
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\roslyn\VBCSCompiler.exe.config
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.dll.config
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Elmah.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\EntityFramework.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\EntityFramework.SqlServer.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.DependencyCollector.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.Web.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.WindowsServer.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.ApplicationInsights.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Oracle.ManagedDataAccess.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Unity.Wcf.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.Unity.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Negocio.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Modelo.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.AccesoDatos.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Strings.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\EntityFramework.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\EntityFramework.SqlServer.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.DependencyCollector.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.Web.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.AI.WindowsServer.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.ApplicationInsights.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.Unity.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Negocio.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Modelo.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.AccesoDatos.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\TGS.SGV.Strings.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.csprojResolveAssemblyReference.cache
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\csc.exe
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\System.Collections.Immutable.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\System.Reflection.Metadata.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\vbc.exe
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\VBCSCompiler.exe
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\roslyn\VBCSCompiler.exe.config
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.dll.config
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.Host.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Elmah.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\EntityFramework.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\EntityFramework.SqlServer.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Oracle.ManagedDataAccess.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Unity.Wcf.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.Unity.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Negocio.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Modelo.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.AccesoDatos.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Agente.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Strings.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Comun.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Servicio.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\EntityFramework.xml
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\EntityFramework.SqlServer.xml
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.Unity.xml
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Negocio.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Modelo.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.AccesoDatos.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Agente.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Strings.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\Microsoft.Practices.ServiceLocation.xml
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\bin\TGS.SGV.Comun.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.csprojResolveAssemblyReference.cache
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Servicio.Host\obj\Debug\TGS.SGV.Servicio.Host.pdb

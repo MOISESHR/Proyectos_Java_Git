@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4509ccc9-2d8a-4261-a397-9e2e82c67623" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:16858/ModuloSistemaservicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ModuloSistemaServicio.xsd" MetadataType="Schema" ID="6ff67054-6784-40f8-893e-d9263c4e2791" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="ModuloSistemaServicio1.xsd" MetadataType="Schema" ID="12c46660-6dc8-4d43-b4da-1acbc5f96203" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="ModuloSistemaServicio.disco" MetadataType="Disco" ID="16a78d85-bba5-40f3-aa33-3c5cafaa7fbc" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?disco" />
+    <MetadataFile FileName="ModuloSistemaServicio2.xsd" MetadataType="Schema" ID="d2e174b9-fe94-44f0-b8c1-3c223dedc452" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="ModuloSistemaServicio.wsdl" MetadataType="Wsdl" ID="103bafff-92b0-4c00-9457-e6122d2b75c6" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ModuloSistemaServicio1.wsdl" MetadataType="Wsdl" ID="6cd004f1-d6d2-4f18-a1c5-675427780375" SourceId="1" SourceUrl="http://localhost:16858/ModuloSistemaServicio.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

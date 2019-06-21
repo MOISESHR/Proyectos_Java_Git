@@ -1,0 +1,11 @@
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Agente.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Agente.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Modelo.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Comun.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Strings.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Modelo.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Comun.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\bin\Debug\TGS.SGV.Strings.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\obj\Debug\TGS.SGV.Agente.csprojResolveAssemblyReference.cache
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\obj\Debug\TGS.SGV.Agente.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Agente\obj\Debug\TGS.SGV.Agente.pdb
