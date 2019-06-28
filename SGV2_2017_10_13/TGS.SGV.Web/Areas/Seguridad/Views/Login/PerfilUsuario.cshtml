@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SGV</title>
+
+    @Styles.Render("~/Content/master/estilos")
+    @Styles.Render("~/bundles/Assets/css")
+    @Scripts.Render("~/bundles/jquery/js")
+    @Scripts.Render("~/bundles/angular/js") 
+
+</head>
+<body class="nav-md">
+    <section id="hero">
+        <div class="hero-container">
+            <div class="wow fadeIn">
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="textoCompleto">
+                Sistema de Gestión Vacacional - SGV
+            </h1>
+            <h1 class="LogoTexto">
+                SGV
+            </h1>
+        </div>
+    </section> 
+
+    <section id="general">
+        <div ng-app="app.Seguridad" ng-controller="PerfilController as vm" class="container wow fadeInUp">
+
+            <div id="divAlert"></div>
+            <input name="__RequestVerificationToken" type="hidden" value='@TGS.SGV.Web.Utilitarios.CustomAntiForgeryToken.GetAntiForgeryToken()'>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <p class="section-description">
+                        Selecione un perfil de acceso
+                    </p>
+                    <div class="form-group">
+                        <select class="form-control"
+                                ng-model="vm.CmbCodigoPerfil"
+                                ng-options="item.Codigo as item.Descripcion for item in vm.Perfiles"></select>
+                    </div>
+
+                    <button type="button" ng-click="vm.IngresarSistema()" class="btn btn-primary block full-width m-b">Aceptar</button>
+
+                    <button type="button"
+                            onclick="location.href='@Url.Action("CerrarSesion", "Login", new { area = "Seguridad" })'"
+                            class="btn btn-primary block full-width m-b">
+                        Salir
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        &copy; Copyright <strong>Tgestiona</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    @Scripts.Render("~/bundles/modernizr/js")
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/bundles/main/js")
+    @Scripts.Render("~/bundles/Assets/js")
+    @Scripts.Render("~/bundles/app/base/js")
+
+    <script>
+    var ListaPerfilesJson = @Html.Raw(Json.Encode(ViewBag.Perfiles));
+    </script>
+    @Scripts.Render("~/bundles/app/seguridad/perfiles/js")
+</body>
+</html>
+
+  

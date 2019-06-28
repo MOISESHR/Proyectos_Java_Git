@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:16858/SolicitudServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" />
+  <xs:import schemaLocation="http://localhost:16858/SolicitudServicio.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Modelo" />
+  <xs:import schemaLocation="http://localhost:16858/SolicitudServicio.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Base" />
+  <xs:element name="ListarSolicitud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="solicitudRequest" nillable="true" type="q1:SolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarSolicitudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ListarSolicitudResult" nillable="true" type="q2:SolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSolicitudPorCodigo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoSolicitud" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSolicitudPorCodigoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ObtenerSolicitudPorCodigoResult" nillable="true" type="q3:SolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizaSolicitudTrabajador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoSolicitud" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizaSolicitudTrabajadorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Modelo" minOccurs="0" name="ActualizaSolicitudTrabajadorResult" nillable="true" type="q4:Solicitud" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistraSolicitudTrabajador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Modelo" minOccurs="0" name="solicitud" nillable="true" type="q5:Solicitud" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistraSolicitudTrabajadorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Base" minOccurs="0" name="RegistraSolicitudTrabajadorResult" nillable="true" type="q6:ResultadoOfSolicitud_PWewI1xn" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarComboFeriado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="comboFeriadoRequest" nillable="true" type="q7:ComboFeriadoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarComboFeriadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ListarComboFeriadoResult" nillable="true" type="q8:ComboFeriadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFechaDerecho">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="fechaDerechoRequest" nillable="true" type="q9:FechaDerechoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFechaDerechoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ObtenerFechaDerechoResult" nillable="true" type="q10:FechaDerechoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEvaluacionSolicitud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ESRequest" nillable="true" type="q11:EvaluacionSolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEvaluacionSolicitudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ListarEvaluacionSolicitudResult" nillable="true" type="q12:EvaluacionSolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEvaluacionSolicitudDPZ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ESRequest" nillable="true" type="q13:EvaluacionSolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEvaluacionSolicitudDPZResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ListarEvaluacionSolicitudDPZResult" nillable="true" type="q14:EvaluacionSolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoAprobarEvaluacionSolicitudFutura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ESRequest" nillable="true" type="q15:EvaluacionSolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoAprobarEvaluacionSolicitudFuturaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ProcesoAprobarEvaluacionSolicitudFuturaResult" nillable="true" type="q16:EvaluacionSolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoModificarEvaluacionSolicitud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ESRequest" nillable="true" type="q17:EvaluacionSolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoModificarEvaluacionSolicitudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ProcesoModificarEvaluacionSolicitudResult" nillable="true" type="q18:EvaluacionSolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoRechazarEvaluacionSolicitud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ESRequest" nillable="true" type="q19:EvaluacionSolicitudRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesoRechazarEvaluacionSolicitudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" minOccurs="0" name="ProcesoRechazarEvaluacionSolicitudResult" nillable="true" type="q20:EvaluacionSolicitudResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

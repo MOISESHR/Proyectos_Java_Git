@@ -1,0 +1,14 @@
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Modelo.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Modelo.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.dll
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.pdb
+D:\Backup_pc\Proyectos2014\SGV\TGS.SGV\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.csprojResolveAssemblyReference.cache
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.csprojResolveAssemblyReference.cache
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\obj\Debug\TGS.SGV.Modelo.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Modelo.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Modelo.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Comun.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Strings.dll
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Comun.pdb
+D:\MHR\PROYECTO 2\PROYECTO\SGV2\TGS.SGV.Modelo\bin\Debug\TGS.SGV.Strings.pdb

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7c3f5c49-ea28-4c9b-87c7-3c642a246a3d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioAutenticacion.xsd" MetadataType="Schema" ID="d62f9c1c-a699-4ce7-a227-eb4099fa5f51" SourceId="1" SourceUrl="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioAutenticacion.wsdl" MetadataType="Wsdl" ID="42755cf3-acc1-4399-a42e-282b3ae5dd68" SourceId="1" SourceUrl="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?wsdl" />
+    <MetadataFile FileName="ServicioAutenticacion.disco" MetadataType="Disco" ID="d78f154f-875a-4932-8949-253bdd88afac" SourceId="1" SourceUrl="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?disco" />
+    <MetadataFile FileName="ServicioAutenticacion1.xsd" MetadataType="Schema" ID="805e5c66-5fe3-4491-8a58-172c18c73c52" SourceId="1" SourceUrl="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioAutenticacion2.xsd" MetadataType="Schema" ID="c0e86329-0b92-4503-87be-89739058b8a6" SourceId="1" SourceUrl="http://gppesvlcli1204/WSRRHHAcceso/ServicioAutenticacion.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

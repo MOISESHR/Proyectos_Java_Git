@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:16858/ParametroServicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:16858/ParametroServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:16858/ParametroServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TGS.SGV.Modelo.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IParametroServicio_ObtenerParametroInterno_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametroInterno" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerParametroInterno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametroInternoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerParametro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametro" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerParametro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerParametroAcceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametroAcceso" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerParametroAcceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametroAccesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerIndicadoresFuturo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadoresFuturo" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerIndicadoresFuturo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadoresFuturoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerGoceFuturo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerGoceFuturo" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerGoceFuturo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerGoceFuturoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerIndicadores_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadores" />
+  </wsdl:message>
+  <wsdl:message name="IParametroServicio_ObtenerIndicadores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadoresResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IParametroServicio">
+    <wsdl:operation name="ObtenerParametroInterno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametroInterno" message="tns:IParametroServicio_ObtenerParametroInterno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametroInternoResponse" message="tns:IParametroServicio_ObtenerParametroInterno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerParametro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametro" message="tns:IParametroServicio_ObtenerParametro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametroResponse" message="tns:IParametroServicio_ObtenerParametro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerParametroAcceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametroAcceso" message="tns:IParametroServicio_ObtenerParametroAcceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerParametroAccesoResponse" message="tns:IParametroServicio_ObtenerParametroAcceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadoresFuturo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerIndicadoresFuturo" message="tns:IParametroServicio_ObtenerIndicadoresFuturo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerIndicadoresFuturoResponse" message="tns:IParametroServicio_ObtenerIndicadoresFuturo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGoceFuturo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerGoceFuturo" message="tns:IParametroServicio_ObtenerGoceFuturo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerGoceFuturoResponse" message="tns:IParametroServicio_ObtenerGoceFuturo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadores">
+      <wsdl:input wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerIndicadores" message="tns:IParametroServicio_ObtenerIndicadores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IParametroServicio/ObtenerIndicadoresResponse" message="tns:IParametroServicio_ObtenerIndicadores_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IParametroServicio" type="tns:IParametroServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerParametroInterno">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerParametroInterno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerParametro">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerParametro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerParametroAcceso">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerParametroAcceso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadoresFuturo">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerIndicadoresFuturo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGoceFuturo">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerGoceFuturo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadores">
+      <soap:operation soapAction="http://tempuri.org/IParametroServicio/ObtenerIndicadores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,70 @@
+﻿<div class="modal-header">
+    <div class='form-group text-right acciones'>
+        <button id="btnPAceptar" class="btn btn-sm btn-primary right" ng-click="vm.BuscarEvaluacion()">
+            <span class="glyphicon glyphicon-save"></span> Acepar
+        </button>
+        <button id="" data-dismiss='modal' class='btn btn-sm btn-primary btn-space right'>
+            <span class="glyphicon glyphicon-folder-close"></span>Cancelar
+        </button>
+    </div>
+    <h4 class="modal-title">RECHAZO DE SOLICITUD</h4>
+    <form autocomplete="off">
+        <div class='form-group'>
+            <div id="divAlertModal">
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Trabajador :</h5>
+                <input id="idTrabajador" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Gerencia Central :</h5>
+                <input id="idGerenciaCentral" type="text" class="form-control" ng-model="vm.IncluirSubUnidad" disabled="disabled">
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Gerencia :</h5>
+                <input id="idGerencia" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>CCR :</h5>
+                <input id="idCCR" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Fecha Inicio :</h5>
+                <input id="idRFechaInicio" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Fecha Fin :</h5>
+                <input id="idRFechaFin" type="text" class="form-control" ng-model="vm.IncluirSubUnidad" disabled="disabled">
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-6'>
+                <h5># Días :</h5>
+                <input id="idRNumDias" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+                <h5>Tipo :</h5>
+                <input id="idRTipo" type="text" class="form-control" ng-model="vm.AMaterno" disabled="disabled">
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-12'>
+                <h5>Sustento :</h5>
+                <textarea rows="4" cols="50" name="idRSustento" form="usrform" class="form-control" ng-model="vm.AMaterno">
+                    Enter text here...
+                </textarea>
+            </div>
+        </div>
+        <div class='col-xs-12 col-lg-12'>
+            <div class='col-xs-12 col-sm-12'>
+                <br />
+            </div>
+        </div>
+    </form>
+</div>

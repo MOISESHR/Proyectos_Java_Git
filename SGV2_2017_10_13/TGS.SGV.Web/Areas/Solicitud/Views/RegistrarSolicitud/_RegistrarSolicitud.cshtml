@@ -1,0 +1,79 @@
+﻿<div ng-controller="RegistrarSolicitudController as vmc">
+    <div class='form-group text-right acciones'>
+        <button class="btn btn-primary" ng-click=vmc.RegistroSolicitud()><span class="glyphicon glyphicon-list-alt"></span> Registrar </button>
+        <a class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-share-alt"></span> Salir </a>
+    </div>
+    <h4 class="modal-title"> Registrar Solicitud </h4>
+    <h5 class="font-bold"><br /><titulo-Datos-Obligatorios></titulo-Datos-Obligatorios><br /></h5>
+    <div id="divAlertRegistrar" class="alert-edit"> </div>
+
+    <div class="modal-header">
+        <h4> Datos Base del Solicitante: </h4>
+        <div class='col-xs-12  col-sm-12 '>
+            <div class='col-xs-12  col-sm-4 '>
+                <h5> Fecha de Derecho : </h5>
+                <input id="idNombreLider" type="text" ng-model="vmc.FechaDerecho" class="form-control" disabled="disabled" />
+            </div>
+            <div class='col-xs-12  col-sm-4 '>
+                <h5> # Pendientes : </h5>
+                <input id="idPendientes" type="text" ng-model="vmc.Pendientes" class="form-control" disabled="disabled">
+            </div>
+
+            <div class='col-xs-12  col-sm-12 '>
+                <h5>  </h5>
+            </div>
+
+            <div class='col-xs-12  col-sm-4 '>
+                <h5> # Vencidas : </h5>
+                <input id="idVencidas" type="text" ng-model="vmc.Vencidas" class="form-control" disabled="disabled">
+            </div>
+            <div class='col-xs-12  col-sm-4 '>
+                <h5> # Truncos : </h5>
+                <input id="idTruncos" type="text" ng-model="vmc.Truncos" class="form-control" disabled="disabled">
+            </div>
+        </div>
+
+        <div class='col-xs-12  col-sm-12 '>
+            <h5>  </h5>
+        </div>
+
+        <h4> Ingrese rango de fecha de inicio de Vacaciones: </h4>
+        <div class='col-xs-12  col-sm-12 '>
+            <div class="col-xs-12 col-sm-5">
+                <h5> Fecha Inicio (*) :</h5>
+                <div class='input-group date' style="cursor:pointer;">
+                    <input id="idFechaInicioRegistro" type='text' class="form-control" data-date-time-picker ng-model="vmc.FechaInicioRegistro" ng-change=vmc.RestarFechas() maxlength="10" placeholder="dd/mm/yyyy" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <h5> Fecha Final (*) :</h5>
+                <div class='input-group date' style="cursor:pointer;">
+                    <input id="idFechaFinalRegistro" type='text' class="form-control" data-date-time-picker ng-model="vmc.FechaFinalRegistro" ng-change=vmc.RestarFechas() maxlength="10" placeholder="dd/mm/yyyy" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class='col-xs-12  col-sm-12 '>
+                <h5>  </h5>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <h5> Dias Calendario : </h5>
+                <input id="idCalculaDias" type="text" ng-model="vmc.CalculaDias" class="form-control" disabled="disabled">
+            </div>
+        </div>
+     </div>
+
+ </div>
+@section scripts{
+    <script>
+        var jsonDatoSolicitud = @Html.Raw(Json.Encode(ViewBag.vbDatoSolicitud));
+    </script>
+    @Scripts.Render("~/bundles/app/Unidad/js")
+    @Scripts.Render("~/bundles/app/Solicitud/Registrar/js")
+}

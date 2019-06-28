@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="502c722d-d1e7-4282-8167-ae800b9d6e01" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:16858/PerfilUsuarioServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PerfilUsuarioServicio.wsdl" MetadataType="Wsdl" ID="301d4a6f-22a8-401b-997f-43f17b510057" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PerfilServicio.wsdl" MetadataType="Wsdl" ID="f6785224-3cbb-4860-bba5-70eb54329ec8" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?wsdl" />
+    <MetadataFile FileName="PerfilUsuarioServicio.xsd" MetadataType="Schema" ID="4718572b-7bf5-4d01-8571-cd6cc2d67c02" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="PerfilUsuarioServicio1.xsd" MetadataType="Schema" ID="b1f5a33d-8902-440d-84ab-5153f8e02dcd" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="PerfilUsuarioServicio2.xsd" MetadataType="Schema" ID="acd680aa-08cc-4f9e-b473-0a7504b5a0ce" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="PerfilUsuarioServicio.disco" MetadataType="Disco" ID="a23bc4c4-5597-476a-a0d7-e96b9477ad3e" SourceId="1" SourceUrl="http://localhost:16858/PerfilUsuarioServicio.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,171 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<body ng-app="app.Solicitud" block-ui="main">
+</body>
+<div id="IdBandejaEvaluacionController" ng-app="app.Solicitud" ng-controller="BandejaEvaluacionController  as vm">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class='col-xs-12 col-sm-12'>
+                <div class='form-group text-right acciones'>
+                    <button class="btn btn-sm btn-primary btn-space right" ng-click="vm.ConfirmaAprobar()" ng-show="vm.MostrarAprobar">
+                        <span class="glyphicon glyphicon-list-alt"></span>&nbsp;  Aprobar
+                    </button>
+                    <button class="btn btn-sm btn-primary btn-space right" ng-click="vm.ModalModificar()" ng-show="vm.MostrarModificar">
+                        <span class="glyphicon glyphicon-list-alt"></span>&nbsp;  Modificar
+                    </button>
+                    @*<a class="btn btn-primary" ng-click="vm.ModalModificar()" ng-show="vm.MostrarModificar"><span class="glyphicon glyphicon-list-alt"></span> Modificar</a>*@
+                    @*<button class="btn btn-sm btn-primary btn-space right" data-toggle="modal" data-backdrop="static" data-target="#ModalRechazar" ng-show="vm.MostrarRechazar">
+                        <span class="glyphicon glyphicon-list-alt"></span>&nbsp;  Rechazar
+                    </button>*@
+                    <button class="btn btn-sm btn-primary btn-space right" ng-click="vm.ModalRechazar()" ng-show="vm.MostrarRechazar">
+                        <span class="glyphicon glyphicon-list-alt"></span>&nbsp;  Rechazar
+                    </button>
+                </div>
+                <div class='form-group'>
+                    <h4 class="modal-title"> Bandeja de Evaluaciones de Solicitudes</h4>
+                    <h5 class="font-bold"><br /><titulo-Datos-Obligatorios></titulo-Datos-Obligatorios><br /></h5>
+                    <div id="divAlert" class="alert-edit">
+                    </div>
+                </div>
+
+                <form>  
+                    <div class='form-group'>
+                        <div class='col-xs-12 col-sm-12'>
+                            <h5></h5>
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>Empresa:</h5>
+                            <select id="IdListEmpresas" class="form-control"
+                                    ng-model="vm.CodigoEmpresa"
+                                    ng-options="item.Codigo as item.Descripcion for item in vm.ListEmpresas"
+                                    ng-change="vm.ListarCCRPorIdEmpresa()"></select>
+
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>Ccr :</h5>
+                            <input type="text" class="form-control" ng-model="vm.Unidad"
+                                   data-animation="am-flip-x"
+                                   bs-options="items as items.Descripcion for items in vm.BuscarUnidad($viewValue)" 
+                                   placeholder="Ingrese el CCR" bs-typeahead>                          
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <div class='col-xs-12 col-sm-12'>
+                            <h5></h5>
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>CIP :</h5>
+                            <input id="idCIP" type="text" class="form-control" ng-model="vm.CipEmpleado">
+
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>Nombres :</h5>
+                            <input id="idNombres" type="text" class="form-control" ng-model="vm.Nombres">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <div class='col-xs-12 col-sm-12'>
+                            <h5></h5>
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>Paterno :</h5>
+                            <input id="idAPaterno" type="text" class="form-control" ng-model="vm.APaterno">
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <h5>Materno :</h5>
+                            <input id="idAMaterno" type="text" class="form-control" ng-model="vm.AMaterno">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <div class='col-xs-12 col-sm-12'>
+                            <h5></h5>
+                        </div>
+                        <div class='col-xs-12 col-sm-2'>
+                            <h5>Tipo : </h5>
+                            <select id="idTipo" class="form-control"
+                                    ng-model="vm.CodigoTipo"
+                                    ng-options="item.Codigo as item.Descripcion for item in vm.ListTipos"></select>
+                        </div>
+                        <div class='col-xs-8 col-sm-2'>
+                            <h5> Fecha Inicio :</h5>
+                            <div class='input-group date' style="cursor:pointer;">
+                                <input id="idFechaInicio" type='text' class="form-control" data-date-time-picker ng-model="vm.FechaSolicitudInicio" maxlength="10" placeholder="dd/mm/yyyy" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='col-xs-8 col-sm-2'>
+                            <h5> Fecha Fin :</h5>
+                            <div class='input-group date' style="cursor:pointer;">
+                                <input id="idFechaFinal" type='text' class="form-control" data-date-time-picker ng-model="vm.FechaSolicitudFin" maxlength="10" placeholder="dd/mm/yyyy" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='col-xs-12 col-sm-6'>
+                            <div class="checkbox">
+                                <label><input id="idIncluirSubUnidad" type="checkbox" ng-model="vm.IncluirSubUnidad">Incluir SubUnidades</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='form-group text-right'>
+                        <div class='col-xs-12 col-sm-12'>
+                            <button id="btnBuscar" class="btn btn-sm btn-primary right" ng-click="vm.BuscarEvaluacion()">
+                                <span class="glyphicon glyphicon-search"></span> Buscar
+                            </button>
+                            <button id="btnLimpiar" class="btn btn-sm btn-primary  text-right" ng-click="vm.LimpiarFiltros()">
+                                <span class="glyphicon glyphicon-trash"></span> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                    <table datatable="" dt-options="vm.dtOptions" dt-columns="vm.dtColumns"
+                           class="row-border hover dataTable no-footer dtr-inline collapsed"
+                           dt-instance="vm.dtInstance" style="width:100%;"></table>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal modal-wide fade" id="ModalDatos">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="ContenidoModalDatos" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section scripts{
+    <script>
+        var jsonListaEmpresas = @Html.Raw(Json.Encode(ViewBag.vbListaEmpresas));
+        var jsonListaCCR = @Html.Raw(Json.Encode(ViewBag.vbListaCCR));
+        var jsonListaTipos = @Html.Raw(Json.Encode(ViewBag.vbListaTipos));
+        var jsonListEstados = @Html.Raw(Json.Encode(ViewBag.vbListEstados));
+        var jsonDatosTrabajador = @Html.Raw(Json.Encode(ViewBag.vbDatosTrabajador));
+        var jsonEstGoceFut = @Html.Raw(Json.Encode(ViewBag.vbEstGoceFut));
+        var jsonDiaCorte1 = @Html.Raw(Json.Encode(ViewBag.vbDiaCorte1));
+        var jsonFechaCorte1 = @Html.Raw(Json.Encode(ViewBag.vbFechaCorte1));
+        var jsonSinFechaCorte = @Html.Raw(Json.Encode(ViewBag.vbSinFechaCorte));
+        var jsonDiaHoy = @Html.Raw(Json.Encode(ViewBag.vbDiaHoy));
+        
+        function AdicionaEvaluacion(CodSolicitud) {
+            var scope = angular.element(document.getElementById("IdBandejaEvaluacionController")).scope();
+            scope.vm.AdicionarSolicitud(CodSolicitud);
+            scope.$apply();
+        }
+
+        function EliminarEvaluacion(IdSolicitud) {
+                var scope = angular.element(document.getElementById("IdBandejaEvaluacionController")).scope();
+                scope.vm.EliminarEvaluacion(IdSolicitud);
+                scope.$apply();
+        }
+    </script>
+     
+    @Scripts.Render("~/bundles/app/Unidad/js");
+    @Scripts.Render("~/bundles/app/SolicitudEvaluacion/Bandeja/js");
+}
